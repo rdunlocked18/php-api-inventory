@@ -18,12 +18,10 @@ function readDailyProductJson(){
         }
     }
     header('Content-Type: application/json');
-    echo json_encode(array("addedProducts"=>$tempArray));
+    echo json_encode($tempArray);
     mysqli_close($connect);
 
 }
 
-echo "<h1><center>need no Worry just POST 
-Reqz goes here no junks</h1></center>";
 
 ?>
